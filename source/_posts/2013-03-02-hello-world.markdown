@@ -3,7 +3,7 @@ layout: post
 title: "Hello World"
 date: 2013-03-02 18:01
 comments: true
-categories: entropy 
+categories: Entropy 
 ---
 
 Placeholder text and such.
@@ -18,4 +18,4 @@ Awesome code snippet
 {% endcodeblock %}
 
 
-{% include_code qe lang:bash %}
+{% include_code qe.sh lang:bash %}
