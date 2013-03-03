@@ -23,6 +23,9 @@ Bare with me for a bit whilst I get the back end set up to my liking - actual co
 This is just a dumping ground for site testing - it'll be removed once everything is set up to my liking.
 
 
+Testing __bold font__, _italic font_, ελληνική γλώσσα, __ελληνική γλώσσα__, српска ћирилица
+
+
 $$
 f(x;\mu,\sigma^2) = \frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2}
 $$
