@@ -8,7 +8,7 @@ categories: Entropy
 
 In the past, my blogs have always been akin to a public, online diary. They tended to generally be inane drivel about what we got up to on Friday night. With that being said, the era I'm referring to is circa 2002; modern technology has moved on - we have Facebook for that kind of shit. 
 
-My goals for this blog are somewhat different. I've realised that my grandiose schemes for this domain ([neophilus.net](http://www.neophilus.net)) are most likely never going to happen, and my life now is considerably busier than it was back in the day. Also, no-one gives two shits about some random guys everyday life; not unless they're a 13 yo girl swooning over a pop star. 
+My goals for this blog are somewhat different. I've realised that my grandiose schemes for this domain ([neophilus.net](http://www.neophilus.net)) are most likely never going to happen, and my life now is considerably busier than it was back in the day. Also, no-one gives two shits about some random guys' everyday life; not unless they're a 13 yo girl swooning over a pop star. 
 
 If you are a 13 yo girl; fan-mail is appreciated, although I highly doubt you're my target audience. 
 
