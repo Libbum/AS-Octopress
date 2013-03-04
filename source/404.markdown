@@ -4,9 +4,7 @@ title: Looks like you've got yourself a broken fandangle. (404 error)
 footer: false
 comments: false
 ---
-It looks like you've been linked to a file which no longer exists.
-
-Here's a tiny goat for your troubles:
+You've been linked to a file which no longer exists. Here's a tiny goat for your troubles:
 
 ![So tiny!](/images/404_goat.jpg)
 
