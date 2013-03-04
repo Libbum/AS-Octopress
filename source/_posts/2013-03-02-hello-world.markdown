@@ -23,7 +23,7 @@ Bare with me for a bit whilst I get the back end set up to my liking - actual co
 This is just a dumping ground for site testing - it'll be removed once everything is set up to my liking.
 
 
-Testing __bold font__, _italic font_, ελληνική γλώσσα, __ελληνική γλώσσα__, српска ћирилица
+Testing __bold font__, _italic font_, `monospace`, ελληνική γλώσσα, __ελληνική γλώσσα__, српска ћирилица
 
 
 $$
@@ -35,5 +35,10 @@ $$
 Awesome code snippet
 {% endcodeblock %}
 
+Inline code block.
+
+```
+$ sudo make me a sandwich
+```
 
 {% include_code qe.sh lang:bash %}
