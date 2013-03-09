@@ -3,6 +3,7 @@ $pattern-bg: image-url('bg.jpg');
 $lines-bg: image-url('lines.png');
 $leftfl-bg: image-url('leftfl.png');
 $rightfl-bg: image-url('rightfl.png');
+$flourover: image-url('fover.png') no-repeat;
 $img-border: inline-image('dotted-border.png');
 
 // Main Link Colors
@@ -16,8 +17,6 @@ $main-bg: #f8f8f8 !default;
 $page-bg: #252525 !default;
 $article-border: #eeeeee !default;
 
-$header-bg: #333 !default;
-$header-border: lighten($header-bg, 15) !default;
 $title-color: #f2f2f2 !default;
 $subtitle-color: #aaa !default;
 
@@ -81,6 +80,21 @@ html, body {
   margin: 0px;
 }
 
+/* IE7 Fix */
+* html #container {
+    display: table;
+    height: 100%
+}
+
+/* Opera Fix */
+body:before {
+    content: "";
+    height: 100%;
+    float: left;
+    width: 0;
+    margin-top: -32767px;
+}
+
 body {
 background: $lines-bg, $leftfl-bg, $rightfl-bg, $pattern-bg;
 background-repeat: no-repeat, no-repeat, no-repeat, repeat;
@@ -88,5 +102,17 @@ background-attachment: scroll, scroll, fixed, scroll;
 background-position: 50% 150px, -webkit-calc(50% - 590px) 80px, -webkit-calc(50% + 640px) top, top left;
 background-position: 50% 150px, -moz-calc(50% - 590px) 80px, -moz-calc(50% + 640px) top,top left;
 background-position: 50% 150px, calc(50% - 590px) 80px, calc(50% + 640px) top, top left;
+}
+
+#container {
+
+  height: 100%;
+    height: auto !important;
+    min-height: 100%;
+}
+
+#maincont {
+    overflow: auto;
+    padding-bottom: 30px;
 }
 

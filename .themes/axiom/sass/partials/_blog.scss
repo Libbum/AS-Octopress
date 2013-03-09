@@ -134,3 +134,16 @@ article + article {
     }
   }
 }
+
+#flourishover {
+  position: absolute;
+  height: 56px;
+  width: 32px;
+  top: 250px;
+  left: -webkit-calc(50% - 527px);
+  left: -moz-calc(50% - 527px);
+  left: calc(50% - 527px);
+  background: $flourover;
+  z-index:10;
+}
+
