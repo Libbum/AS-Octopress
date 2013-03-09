@@ -2,7 +2,16 @@
 layout: default
 ---
 
-<div>
+{% unless page.sidebar == false %}
+<aside class="sidebar">
+  {% if site.page_asides.size %}
+    {% include_array page_asides %}
+  {% else %}
+    {% include_array default_asides %}
+  {% endif %}
+</aside>
+{% endunless %}
+<div id="content">
 <article role="article">
   {% if page.title %}
   <header>
@@ -31,12 +40,3 @@ layout: default
   </section>
 {% endif %}
 </div>
-{% unless page.sidebar == false %}
-<aside class="sidebar">
-  {% if site.page_asides.size %}
-    {% include_array page_asides %}
-  {% else %}
-    {% include_array default_asides %}
-  {% endif %}
-</aside>
-{% endunless %}

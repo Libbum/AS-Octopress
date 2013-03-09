@@ -24,15 +24,15 @@
 }
 
 #content {
-  overflow: hidden;
-  > div, > article { width: 100%; }
+  margin: 0px 395px 0px 103px;
 }
 
 aside.sidebar {
-  float: none;
+  width: 280px;
+  margin-right: 103px;
+  margin-top: 4px;
+  float: right;
   padding: 0px;
-  background-color: lighten($sidebar-bg, 2);
-  border-top: 1px solid $sidebar-border;
   @extend .group;
 }
 
@@ -55,5 +55,12 @@ body.sidebar-footer {
 
 #main, #content, .sidebar {
   @extend .group;
+}
+
+#main {
+  width: 1260px;
+  margin:0 auto;
+  overflow: hidden;
+  height: 100%;
 }
 
