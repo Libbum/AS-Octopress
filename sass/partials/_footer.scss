@@ -1,19 +1,32 @@
-body > footer {
+footer {
   @extend .sans;
   font-size: .8em;
   color: $footer-color;
-  text-shadow: lighten($footer-bg, 5) 0 1px;
-  background-color: $footer-bg;
-  @include background($footer-bg-front, $footer-bg-back);
-  border-top: 1px solid $footer-border-top;
+  text-shadow: lighten($footer-bg-c, 5) 0 1px;
   position: relative;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  margin-bottom: 3em;
-  @include border-bottom-radius(.4em);
-  z-index: 1;
+  width: 1160px;
+  margin:0 auto;
+  margin-top: 10px;
+  clear: both;
   a {
     @include link-colors($footer-link-color, $footer-link-color-hover, $visited: $footer-link-color);
   }
-  p:last-child { margin-bottom: 0; }
+  p { margin: 0px; padding: 20px; }
 }
+
+#footer_bg{
+  clear: both;
+  background: #171717 $footer-bg;
+}
+#footer_s{
+  background: $footer-s;
+}
+#footer_shadow{
+  float: left;
+  clear: both;
+  width: 99.9999%;
+  height: 30px;
+  margin-top: -20px;
+  background: $footer-shad;
+}
+
