@@ -1,0 +1,19 @@
+---
+layout: page
+title: Looks like you've got yourself a broken fandangle. (404 error)
+footer: false
+comments: false
+---
+You've been linked to a file which no longer exists. Here's a tiny goat for your troubles:
+
+![So tiny!](/images/404_goat.jpg)
+
+Also, the post you were actually looking for may be here:
+
+<div id="blog-archives" class="missing">
+{% for post in site.posts limit: 10 %}
+<article>
+  {% include archive_post.html %}
+</article>
+{% endfor %}
+</div>
