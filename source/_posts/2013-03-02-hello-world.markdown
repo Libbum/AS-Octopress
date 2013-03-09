@@ -16,7 +16,7 @@ I'm a physicist, interested in high performance computing, Linux, electronics, U
 
 Initially, I intend [Axiomatic Semantics](http://axiomatic.neophilus.net) to be a log of things I'm learning as I push through this barrier I seem to be approaching presently: a capable programmer that isn't really working on public projects at all, but feels he should be. Also, there's a massive amount of information I'm discovering as I complete my PhD, or my research work at DSTO - a lot of it I feel may be useful to others out there. There's also the added bonus of this ultimately being an easy archive for me to come back to in the future - once I've totally forgot about something and attempt to reinvent the wheel.
 
-Bare with me for a bit whilst I get the back end set up to my liking - actual content will soon follow.
+Bear with me for a bit whilst I get the back end set up to my liking - actual content will soon follow.
 
 <!-- more -->
 
