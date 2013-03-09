@@ -36,11 +36,6 @@ h1 {
   line-height: 1.2em;
 }
 
-@media only screen and (min-width: 992px) {
-  body { font-size: 1.15em; }
-  h1 { font-size: 2.6em; line-height: 1.2em; }
-}
-
 #{headings()}{
   @extend .heading;
   text-rendering: optimizelegibility;
@@ -117,10 +112,6 @@ blockquote {
     font-style: italic;
     a { color: $text-color-light !important; word-wrap: break-word; }
     &:before { content: '\2014'; padding:{right: .3em; left: .3em;} color: $text-color-light; }
-  }
-  @media only screen and (min-width: 992px) {
-    padding-left: 1.5em;
-    border-left-width: 4px;
   }
 }
 

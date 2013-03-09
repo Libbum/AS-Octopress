@@ -88,15 +88,5 @@ background-attachment: scroll, scroll, fixed, scroll;
 background-position: 50% 150px, -webkit-calc(50% - 590px) 80px, -webkit-calc(50% + 640px) top, top left;
 background-position: 50% 150px, -moz-calc(50% - 590px) 80px, -moz-calc(50% + 640px) top,top left;
 background-position: 50% 150px, calc(50% - 590px) 80px, calc(50% + 640px) top, top left;
- 
-  
-  //> div#main {
-    //background: $sidebar-bg $noise-bg;
-    //border-bottom: 1px solid $page-border-bottom;
-    //> div {
-      //background: $main-bg $noise-bg;
-      //border-right: 1px solid $sidebar-border;
-    //}
-  //}
 }
 

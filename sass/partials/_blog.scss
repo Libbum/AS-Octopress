@@ -22,11 +22,6 @@ article {
         position: absolute; top: 0;
       }
     }
-    @media only screen and (min-width: 768px) {
-      margin-bottom: 1.5em;
-      padding-bottom: 1em;
-      background: $img-border bottom left repeat-x;
-    }
   }
   h2 {
     padding-top: 0.8em;
