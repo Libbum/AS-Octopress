@@ -6,7 +6,6 @@ aside.sidebar {
   section {
     @extend .sans;
     background: $aside-bg;
-    z-index: 5;
     padding: 0px 20px 20px 20px;
     h1 {
       height: 50px;
@@ -22,8 +21,7 @@ aside.sidebar {
      @include transition(color .5s);
     }
     &:hover a {
-     color: $sidebar-link-color;
-     &:hover { color: $sidebar-link-color-hover; }
+      color: $sidebar-link-color-hover; 
    }
   }
   img {

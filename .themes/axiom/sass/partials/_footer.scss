@@ -2,7 +2,6 @@ footer {
   @extend .sans;
   font-size: .8em;
   color: $footer-color;
-  text-shadow: lighten($footer-bg-c, 5) 0 1px;
   position: relative;
   width: 1160px;
   margin:0 auto;
@@ -12,6 +11,9 @@ footer {
     @include link-colors($footer-link-color, $footer-link-color-hover, $visited: $footer-link-color);
   }
   p { margin: 0px; padding: 20px; }
+  .cfoot { text-align: center; 
+  text-shadow: #111 0 1px;
+  }
 }
 
 #footer_bg{

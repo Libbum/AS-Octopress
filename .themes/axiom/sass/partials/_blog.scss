@@ -75,6 +75,7 @@ article {
       clear: both;
       overflow: hidden;
     }
+    .categories { color: darken($text-color, 10); }
     .byline + time:before, time +time:before, .comments:before, .byline ~ .categories:before {
       @extend .separator;
     }
@@ -170,6 +171,12 @@ article + article {
   }
   .article_footer_s{
     padding: 2px 23px 2px 23px;
+    color: lighten($text-color, 20);
+   a {
+       color: lighten($text-color, 10);
+       &:hover { color: $link-color-hover; }
+     } 
+    
     overflow: hidden;
     height: 20px;
     margin: 0px 5px 0px 5px;
