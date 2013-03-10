@@ -1,25 +1,30 @@
-.side-shadow-border {
-  @include box-shadow(lighten($sidebar-bg, 5) 0 1px);
-}
 aside.sidebar {
   overflow: hidden;
   color: $sidebar-color;
-  text-shadow: lighten($sidebar-bg, 8) 0 1px;
+  text-shadow: 1px 1px 0 #000;
   a { @extend .force-wrap; }
   section {
     @extend .sans;
-    font-size: .8em;
-    line-height: 1.4em;
-    margin-bottom: 1.5em;
+    background: $aside-bg;
+    z-index: 5;
+    padding: 0px 20px 20px 20px;
     h1 {
-      margin: 1.5em 0 0;
-      padding-bottom: .2em;
-      border-bottom: 1px solid $sidebar-border;
-      @extend .side-shadow-border;
+      height: 50px;
+      padding-top: 15px;
+      text-align: center;
       + p {
-        padding-top: .4em;
+          margin-bottom: 0px;
       }
     }
+
+    a {
+     color: inherit;
+     @include transition(color .5s);
+    }
+    &:hover a {
+     color: $sidebar-link-color;
+     &:hover { color: $sidebar-link-color-hover; }
+   }
   }
   img {
     @extend .flex-content;
@@ -32,21 +37,10 @@ aside.sidebar {
   }
   li {
     list-style: none;
-    padding: .5em 0;
     margin: 0;
-    border-bottom: 1px solid $sidebar-border;
-    @extend .side-shadow-border;
     p:last-child {
       margin-bottom: 0;
     }
-  }
-  a {
-    color: inherit;
-    @include transition(color .5s);
-  }
-  &:hover a {
-    color: $sidebar-link-color;
-    &:hover { color: $sidebar-link-color-hover; }
   }
 }
 .aside-alt-link {
@@ -55,3 +49,12 @@ aside.sidebar {
     color: $sidebar-link-color-subdued-hover;
   }
 }
+
+.asideb {
+  width: 280px;
+  height: 6px;
+  line-height: 6px;
+  background: $aside-b-bg;
+  margin-bottom: 12px;
+}
+
