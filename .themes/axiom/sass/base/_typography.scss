@@ -84,7 +84,9 @@ q { font-style: italic;
 
 em, dfn { font-style: italic; }
 
-strong, dfn { font-weight: bold; }
+strong, dfn { font-weight: bold;
+    color: darken($text-color, 20);
+}
 
 del, s { text-decoration: line-through; }
 
@@ -107,11 +109,12 @@ blockquote {
   font-size: 1.2em;
   line-height: 1.5em;
   padding-left: 1em;
-  border-left: 4px solid rgba($text-color-light, .5);
+  border-left: 4px solid rgba($text-color, .5);
   cite {
     font-style: italic;
-    a { color: $text-color-light !important; word-wrap: break-word; }
-    &:before { content: '\2014'; padding:{right: .3em; left: .3em;} color: $text-color-light; }
+    color: darken($text-color, 20);
+    a { color: darken($text-color, 10) !important; word-wrap: break-word; }
+    &:before { content: '\2014'; padding:{right: .3em; left: .3em;} color: darken($text-color, 20); }
   }
 }
 
