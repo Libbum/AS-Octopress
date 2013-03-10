@@ -13,14 +13,10 @@ single: true
 </aside>
 {% endunless %}
 <div id="content">
+<div class="article_t"></div>  
 <article class="hentry" role="article">
   {% include article.html %}
   <footer>
-    <p class="meta">
-      {% include post/author.html %}
-      {% include post/date.html %}{% if updated %}{{ updated }}{% else %}{{ time }}{% endif %}
-      {% include post/categories.html %}
-    </p>
     {% unless page.sharing == false %}
       {% include post/sharing.html %}
     {% endunless %}
@@ -34,6 +30,16 @@ single: true
     </p>
   </footer>
 </article>
+<div class="article_b"></div>
+<div class="article_footer">
+  <div class="article_footer_s">
+    <p class="meta">
+      {% include post/date.html %}{% if updated %}{{ updated }}{% else %}{{ time }}{% endif %}
+      {% include post/categories.html %}
+      {% include post/author.html %}
+    </p>
+  </div>
+</div><div class="article_footer_b"></div>
 {% if site.disqus_short_name and page.comments == true %}
   <section>
     <h1>Comments</h1>

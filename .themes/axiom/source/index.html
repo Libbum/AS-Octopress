@@ -14,9 +14,23 @@ layout: default
   {% assign index = true %}
   {% for post in paginator.posts %}
   {% assign content = post.content %}
+    <div class="article_t"></div>
     <article>
       {% include article.html %}
     </article>
+    <div class="article_b"></div>
+    <div class="article_footer">
+    <div class="article_footer_s">
+      <p class="meta">
+        {% include post/date.html %}{% if updated %}{{ updated }}{% else %}{{ time }}{% endif %}
+        {% include post/categories.html %}
+        {% include post/author.html %}
+        {% if site.disqus_short_name and page.comments != false and post.comments != false and site.disqus_show_comment_count == true %}
+         | <a href="{% if index %}{{ root_url }}{{ post.url }}{% endif %}#disqus_thread">Comments</a>
+        {% endif %}
+        </p>
+    </div>
+    </div><div class="article_footer_b"></div>
   {% endfor %}
   <div class="pagination">
     {% if paginator.next_page %}

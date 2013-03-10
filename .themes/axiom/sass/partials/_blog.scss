@@ -1,14 +1,16 @@
 article {
-  padding-top: 1em;
+  position: relative;
+  background: $article-bg;
+  overflow: hidden;
+  padding: 8px 23px 8px 23px;
+  min-height: 50px;
   a { @extend .force-wrap; }
   header {
     width: auto;
     height: auto;
     position: relative;
-    padding-top: 2em;
-    padding-bottom: 1em;
-    margin-bottom: 1em;
-    background: $img-border bottom left repeat-x;
+    padding-top: 10px;
+    padding-bottom: 10px;
     h1 {
       margin: 0;
       a { text-decoration: none;
@@ -16,6 +18,7 @@ article {
     }
     p {
       font-size: .9em;
+      text-align: justify;
       color: $text-color-light;
       margin: 0;
       &.meta {
@@ -64,7 +67,6 @@ article {
     }
   }
   > footer {
-    padding-bottom: 2.5em;
     margin-top: 2em;
     @extend .sans;
     p.meta {
@@ -149,3 +151,41 @@ article + article {
   z-index:10;
 }
 
+  .article_t, .article_b {
+    position: relative;
+    width: 762px;
+    height: 12px;
+    line-height: 12px;
+  }
+  .article_t{
+    background: $article-t-bg;
+  }
+  .article_b{
+    background: $article-b-bg;
+    margin-bottom: 10px;
+  }
+  .article_footer{
+    background: $article-foot-bg;
+    margin: -12px 5px 0px 5px;
+  }
+  .article_footer_s{
+    padding: 2px 23px 2px 23px;
+    overflow: hidden;
+    height: 20px;
+    margin: 0px 5px 0px 5px;
+    background: $article-foot-s;
+  }
+  .article_footer_b{
+    margin: 0px 5px 10px 5px;
+    background: $article-foot-s;
+    height: 8px;
+    line-height: 8px;
+    overflow: hidden;
+    background: $article-foot-b;
+  }
+.blueline { 
+    margin-bottom: 15px;;
+    height: 1px;
+    background: rgb(16,155,255);
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, rgb(16,155,255)));
+}

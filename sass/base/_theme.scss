@@ -11,6 +11,12 @@ $footer-shad: image-url('footer_shadow.png') repeat 0 0;
 $img-border: inline-image('dotted-border.png');
 $aside-bg: image-url('asideo.png') no-repeat;
 $aside-b-bg: image-url('asideb.png') no-repeat 0 0;
+$article-bg: image-url('article_bg.png') repeat-y 0 0;
+$article-t-bg: image-url('article_t.png') no-repeat 0 2px;
+$article-b-bg: image-url('article_b.png') no-repeat 0 0;
+$article-foot-bg: image-url('article_footer_bg.png') repeat-y 0 0;
+$article-foot-s: image-url('article_footer_s.png') no-repeat center 0;
+$article-foot-b: image-url('article_footer_b.png') no-repeat 0 0;
 
 // Main Link Colors
 $link-color: lighten(#165b94, 3) !default;
