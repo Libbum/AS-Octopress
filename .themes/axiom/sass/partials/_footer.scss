@@ -10,9 +10,10 @@ footer {
   a {
     @include link-colors($footer-link-color, $footer-link-color-hover, $visited: $footer-link-color);
   }
-  p { margin: 0px; padding: 20px; }
+  p { margin: 0px; padding: 20px 0px 0px 20px; }
   .cfoot { text-align: center; 
   text-shadow: #111 0 1px;
+  padding: 20px;
   }
 }
 

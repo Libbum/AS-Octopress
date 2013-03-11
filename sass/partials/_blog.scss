@@ -67,10 +67,10 @@ article {
     }
   }
   > footer {
+    width: 700px;
     margin-top: 2em;
     @extend .sans;
     p.meta {
-      margin-bottom: .8em;
       font-size: .85em;
       clear: both;
       overflow: hidden;
