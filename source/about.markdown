@@ -8,3 +8,5 @@ footer: true
 ---
 
 Lorem ipsum
+
+Update check
