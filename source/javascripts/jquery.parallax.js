@@ -32,8 +32,8 @@
 	    	bottom: 1
 	    },
 	
-	    rpx = /^\d+\s?px$/,
-	    rpercent = /^\d+\s?%$/,
+	    rpx = /^\d+\s?pxjQuery/,
+	    rpercent = /^\d+\s?%jQuery/,
 	    
 	    win = jQuery(window),
 	    doc = jQuery(document),

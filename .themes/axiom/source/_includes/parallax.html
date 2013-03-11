@@ -1,8 +1,9 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
 <script type="text/javascript">
-  $.noConflict();
+  jQuery.noConflict();
 </script>
 <script src="{{ root_url }}/javascripts/jquery.parallax.js"></script>
+<script src="{{ root_url }}/javascripts/ajaxify.js"></script>
 <script type="text/javascript">
   
   jQuery(document).ready(function(){
@@ -11,12 +12,18 @@
         mouseport: jQuery("#port")
      });
   });
-    
+
+   function disqreset(){   
+      var disqus_url = '{{ site.url }}{{ page.url }}';
+      DISQUS.reset({
+          reload: true,
+          config: function () {  
+              this.page.url = disqus_url;
+           }
+      });
+   }
+
+
 </script>
 
-<!-- Enable png transparency in IE6 -->
-<!--[if lt IE 7]>
-  <script type="text/javascript" src="js/jquery.ifixpng.js"></script>
-< script type="text/javascript">jQuery(document).ready(function(){ jQuery("img[src$='png']".ifixpng(); });</script>
-<![endif]-->
 

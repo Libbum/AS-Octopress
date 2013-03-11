@@ -18,32 +18,3 @@ Initially, I intend [Axiomatic Semantics](http://axiomatic.neophilus.net) to be 
 
 Bear with me for a bit whilst I get the back end set up to my liking - actual content will soon follow.
 
-<!-- more -->
-
-This is just a dumping ground for site testing - it'll be removed once everything is set up to my liking.
-
-A [link](http://www.purple.com) that I have not clicked.
-
-{% blockquote Douglas Adams, The Hichhikers Guide to the Galaxy %}
-Flying is learning how to throw yourself at the ground and miss.
-{% endblockquote %}
-
-Testing __bold font__, _italic font_, `monospace`, ελληνική γλώσσα, __ελληνική γλώσσα__, српска ћирилица
-
-
-$$
-f(x;\mu,\sigma^2) = \frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2}
-$$
-
-
-{% codeblock %}
-Awesome code snippet
-{% endcodeblock %}
-
-Inline code block.
-
-```
-$ sudo make me a sandwich
-```
-
-{% include_code qe.sh lang:bash %}

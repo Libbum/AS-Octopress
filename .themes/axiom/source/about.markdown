@@ -3,10 +3,15 @@ layout: page
 title: "About Me"
 date: 2013-03-02 21:05
 comments: false
-sharing: true
-footer: true
+sharing: false
+footer: false
 ---
 
-Lorem ipsum
+Not yet written
 
-Update check
+### About this site
+
+Not done either.
+
+
+Check back soon
