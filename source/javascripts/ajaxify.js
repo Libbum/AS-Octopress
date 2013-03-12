@@ -18,7 +18,8 @@ jQuery(document).ready(function() {
 		//Keep a hash for those browsers that push will fuck up on
 		window.location.hash = jQuery(this).attr('href').substr(0,jQuery(this).attr('href').length-5);
     //push url up.
-    history.pushState(null, jQuery(this).attr('alt'), jQuery(this).attr('href'));
+    history.pushState(null, null, jQuery(this).attr('href'));
+    jQuery('title').html(jQuery(this).attr('alt'));
     function loadContent() {
 			jQuery('#toLoad').load(toLoad,showNewContent())
 		}
@@ -42,7 +43,8 @@ jQuery(document).ready(function() {
 		//Keep a hash for those browsers that push will fuck up on
     window.location.hash = jQuery(this).attr('href').substr(0,jQuery(this).attr('href').length-5);
     //push url up.
-    history.pushState(null, jQuery(this).attr('alt'), jQuery(this).attr('href'));
+    history.pushState(null, null, jQuery(this).attr('href'));
+    jQuery('title').html(jQuery(this).attr('alt'));
     function loadContent() {
 			jQuery('#toLoad').load(toLoad,showNewContent())
 		}
