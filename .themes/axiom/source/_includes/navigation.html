@@ -5,24 +5,14 @@
   {% endif %}
 </ul>
   {% if site.simple_search %}
-<!--<form action="{{ site.simple_search }}" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="q" value="site:{{ site.url | shorthand_url }}" />
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form> -->
   <script type="text/javascript">
     function search(toFind) {
       jQuery('#toLoad').tapir({
              'query_param': toFind,
-             'token': '{{ site.tapir_token }}',
-             'complete' : function() { document.getElementById('load').style.display="none";  }
+             'token': '{{ site.tapir_token }}'
              });
        }
   </script>
-
-  <!--  <form> -->
-    <input class="search" name="q" type="search" results=5 autosave=5 placeholder="Search" onsearch="search(this.value);" x-webkit-speech />
-<!--  </form> -->
+  <input class="search" name="q" type="search" results=5 autosave=5 placeholder="Search" onsearch="search(this.value); this.value=''; jQuery(this).blur();" x-webkit-speech />
   {% endif %}
 {% include custom/navigation.html %}
