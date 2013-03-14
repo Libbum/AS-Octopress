@@ -1,5 +1,5 @@
 <ul class="subscription" data-subscription="rss{% if site.subscribe_email %} email{% endif %}">
-  <li><a href="{{ site.subscribe_rss }}" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  <li><a href="{{ site.subscribe_rss }}" title="subscribe via RSS"><i class="icon-rss icon-large"></i></a></li>
   {% if site.subscribe_email %}
     <li><a href="{{ site.subscribe_email }}" rel="subscribe-email" title="subscribe via email">Email</a></li>
   {% endif %}
@@ -11,8 +11,18 @@
     <input class="search" type="text" name="q" results="0" placeholder="Search"/>
   </fieldset>
 </form> -->
-        <form method="get" action="{{ root_url }}/search.html">
-            <input  class="search" name="q" type="text" placeholder="Search" x-webkit-speech />
-        </form>
+  <script type="text/javascript">
+    function search(toFind) {
+      jQuery('#toLoad').tapir({
+             'query_param': toFind,
+             'token': '{{ site.tapir_token }}',
+             'complete' : function() { document.getElementById('load').style.display="none";  }
+             });
+       }
+  </script>
+
+  <!--  <form> -->
+    <input class="search" name="q" type="search" results=5 autosave=5 placeholder="Search" onsearch="search(this.value);" x-webkit-speech />
+<!--  </form> -->
   {% endif %}
 {% include custom/navigation.html %}
