@@ -1,7 +1,8 @@
 ---
 layout: page
-title: "About Me"
+title: "About"
 date: 2013-03-02 21:05
+update: 2013-03-06 21:05
 comments: false
 sharing: false
 footer: false
@@ -14,4 +15,4 @@ Not yet written
 Not done either.
 
 
-Check back soon
+Check back soon.
