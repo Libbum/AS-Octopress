@@ -6,6 +6,14 @@
 </ul>
   {% if site.simple_search %}
   <script type="text/javascript">
+    var inputElement = document.createElement("input");
+    var chromeSearch = ('onsearch' in inputElement);
+    //var firefoxSearch = ('onchange' in inputElement);
+    if (chromeSearch) {
+      jQuery('nav').append("<input class=\"search\" name=\"q\" type=\"search\" results=5 autosave=5 placeholder=\"Search\" onsearch=\"search(this.value); this.value=''; jQuery(this).blur();\" x-webkit-speech />");
+    } else {
+      jQuery('nav').append("<input class=\"search\" name=\"q\" type=\"text\" placeholder=\"Search\" onChange=\"search(this.value); this.value=''; jQuery(this).blur();\" />");
+    }
     function search(toFind) {
       jQuery('#toLoad').tapir({
              'query_param': toFind,
@@ -13,6 +21,5 @@
              });
        }
   </script>
-  <input class="search" name="q" type="search" results=5 autosave=5 placeholder="Search" onsearch="search(this.value); this.value=''; jQuery(this).blur();" x-webkit-speech />
   {% endif %}
 {% include custom/navigation.html %}
