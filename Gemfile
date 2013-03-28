@@ -15,4 +15,4 @@ group :development do
   gem 'liquid', '~> 2.3.0'
 end
 
-gem 'sinatra', :git => "git://github.com/sinatra/sinatra.git" 
+gem 'sinatra', :git => "http://github.com/sinatra/sinatra.git" 
