@@ -326,8 +326,20 @@ task :sitemapbing do
   end
 end
 
+desc 'Notify Tapirgo of the new sitemap'
+task :pingtapirgo do
+  begin
+    require 'net/http'
+    require 'uri'
+    puts '* Pinging Tapirgo'
+    Net::HTTP.get('tapirgo.com', '/api/1/ping.json?token=513f14163f61b0121700015a')
+  rescue LoadError
+    puts '! Could not ping Tapirgo, because Net::HTTP or URI could not be found.'
+  end
+end
+
 desc "Notify various services about new content"
-task :notify => [:pingomatic, :sitemapgoogle, :sitemapbing] do
+task :notify => [:pingomatic, :sitemapgoogle, :sitemapbing, :pingtapirgo] do
 end
 
 
