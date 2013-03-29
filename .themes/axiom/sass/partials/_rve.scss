@@ -1,7 +1,4 @@
 .embed-video-container {
-  @extend .flex-content;
-  @extend .basic-alignment;
-  @include shadow-box;
   position: relative;
   padding-bottom: 56.25%; /* 16/9 ratio */
   padding-top: 30px; /* IE6 workaround*/
