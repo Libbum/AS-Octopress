@@ -4,7 +4,7 @@ title: "Workman layout for Vim"
 date: 2013-08-13 14:19
 published: true
 comments: true
-categories: 
+categories: Vim 
 ---
 
 I've recently switched keyboard layouts from Dvorak to [Workman](http://www.workmanlayout.com/blog/). Dvorak has been good to me over the past 5 years or so, but the philosophy behind it wasn't actualised in it's final design. Workman has been optimised for English and minimises finger strain etc etc. There's no point rabbiting on about it as all of my praises or critiques are already well fleshed out on the Workman website. 
@@ -29,7 +29,7 @@ So, here's my attempt at a decent Workman remapping for Vim:
     nnoremap k e
     nnoremap e k
     nnoremap K E
-    nnoremap E K
+    nnoremap E <nop>
     nnoremap h y
     onoremap h y
     nnoremap y h
@@ -85,7 +85,7 @@ function Keyboard(type)
       nnoremap k e
       nnoremap e k
       nnoremap K E
-      nnoremap E K
+      nnoremap E <nop>
       nnoremap h y
       onoremap h y
       "(Y)ank -> (H)aul
