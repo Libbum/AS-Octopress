@@ -43,9 +43,9 @@ _h,j,k,l_ are replaced by the Workman _y,n,e,o_ home keys, with a few new associ
 * (__Y__)ank -> (__H__)aul
 * Search (__N__)ext -> (__J__)ump
 * (__E__)nd word -> brea(__K__) of word [yeah, that one's a push...]
-* (__O__pen new line -> (__L__)ine
+* (__O__)pen new line -> (__L__)ine
 
-Considering I now use three different layouts depending on where I am, I've had to set up a layout remap function in my .vimrc. Here it is in it's present state at the time of writing; check my [dotfiles]() repository for updates though.
+Considering I now use three different layouts depending on where I am, I've had to set up a layout remap function in my .vimrc. Here it is in it's present state at the time of writing; check my [dotfiles](https://github.com/Libbum/dotfiles) repository for updates though.
 
 {% codeblock lang:vim %}
 " Keyboard  *******************************************************************
